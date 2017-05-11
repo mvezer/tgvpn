@@ -1,3 +1,4 @@
 #!/bin/bash
-cat $(pwd)/torrent_killed.ascii
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cat $DIR/torrent_killed.ascii
 kill $(pidof tixati)
